@@ -1,0 +1,45 @@
+Credex Web Development Internship Assignment
+Objective
+Build a responsive, single-page marketing website for a fictional software resale startup.
+This assignment checks your ability to quickly ship a usable product with clean code,
+relevant content, and good design instincts.
+Your Task
+Build a 1-page responsive website for a fictional company called 'SoftSell' that includes:
+
+Hero Section - Headline and subheading (you write it), CTA button (e.g., “Get a Quote”, “Sell My Licenses”)
+How It Works - Three steps: e.g., Upload License -> Get Valuation -> Get Paid. Icons or visuals preferred
+Why Choose Us - 3–4 bullet points or tiles with icons and small descriptions
+Customer Testimonials - Add 2 dummy reviews (name, role, company)
+Contact / Lead Form - Name, Email, Company, License Type (dropdown), Message (frontend validation only) UI/UX Expectations
+Visually appealing and modern
+Use Tailwind, Bootstrap, or custom styles
+Mobile responsive layout
+Coherent color palette and fonnt family Tech Guidelines
+Use React.js + Vite or Next.js
+Host on Vercel, Netlify, or GitHub Pages
+Use dummy data, no backend needed
+Include a README.md with features implemented, design choices, and time spent Bonus Points
+Logo placeholder or favicon
+SEO meta tags and page title
+Light/dark mode toggle
+Use of animations (e.g., Framer Motion) Bonus: LLM-Powered Chat Feature Add a basic AI-powered customer chat widget.
+Use an open-source wrapper like Langchain or OpenAI API
+Hardcode example questions (e.g., 'How do I sell my license?')
+LLM can be mocked or real (free-tier OpenAI key) Evaluation:
+Clean UI integration
+Intuitive chat UX
+Clear prompts and fallback responses Deliverables
+GitHub repo link (public or invite access)
+Live URL (hosted site)
+Aim for 48 hours max from receiving this brief Remain Connected We have received 2000+ applications. So chances of getting to work with you is less than 1% but would love to stay connected. If you feel comfortable then please send connection request on LinkedIn to stay connected: https://www.linkedin.com/in/adityaadhana-2b0aa4357/ 🟠 4. Orange + Dark Gray + Soft White (Energetic and Friendly)
+Primary: #F97316 (Tailwind: orange-500)
+
+Secondary: #1F2937 (Tailwind: gray-800)
+
+Accent: #FDBA74 (Tailwind: orange-300)
+
+Background: #F9FAFB
+
+Text: #111827
+
+🟠 Best for: Bold, energetic, approachable startup branding use this color scheme make sure all the bonus works are done
