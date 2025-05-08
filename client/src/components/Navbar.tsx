@@ -49,7 +49,10 @@ const Navbar = () => {
             <Button 
               variant="ghost" 
               size="icon" 
-              onClick={toggleTheme}
+              onClick={() => {
+                console.log('Theme button clicked');
+                toggleTheme();
+              }}
               className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
             >
               {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
@@ -91,7 +94,10 @@ const Navbar = () => {
               ))}
               <button 
                 className="flex items-center text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary px-3 py-2"
-                onClick={toggleTheme}
+                onClick={() => {
+                  console.log('Mobile theme button clicked');
+                  toggleTheme();
+                }}
               >
                 {theme === 'dark' ? (
                   <>
