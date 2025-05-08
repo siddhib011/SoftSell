@@ -112,7 +112,7 @@ const ContactForm = () => {
                       <FormLabel className="text-gray-700 dark:text-gray-300">Full Name</FormLabel>
                       <FormControl>
                         <Input 
-                          placeholder="John Smith" 
+                          placeholder="Your Name" 
                           {...field} 
                           className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-primary focus:border-primary dark:bg-gray-700 dark:text-white"
                         />
@@ -130,7 +130,7 @@ const ContactForm = () => {
                       <FormLabel className="text-gray-700 dark:text-gray-300">Email Address</FormLabel>
                       <FormControl>
                         <Input 
-                          placeholder="john@company.com" 
+                          placeholder="name@company.com" 
                           type="email" 
                           {...field} 
                           className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-primary focus:border-primary dark:bg-gray-700 dark:text-white"

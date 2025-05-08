@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
+    name: 'Siddhi Bhardwaj',
     role: 'IT Director',
     company: 'CloudNine Solutions',
     image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=96&h=96',
@@ -12,7 +12,7 @@ const testimonials = [
     stars: 5
   },
   {
-    name: 'David Rodriguez',
+    name: 'David',
     role: 'CFO',
     company: 'Nexus Technologies',
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=96&h=96',
