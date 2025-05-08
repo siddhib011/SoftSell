@@ -25,7 +25,7 @@ cd client
 npm install
 ```
 
-###3. Run in development mode
+### 3. Run in development mode
 ```bash
 # In project root for backend
 npm run dev
@@ -34,12 +34,12 @@ npm run dev
 # In /client for frontend
 npm run dev
 ```
-###📁 Folder Structure
+### 📁 Folder Structure
 ```bash
 SoftSell/
 ├── client/   # Frontend source code
 └── server/   # Backend Express API
 ```
-## 📸 Screenshot
+### 📸 Screenshot
 
 ![SoftSell Screenshot](./screenshot.png)
