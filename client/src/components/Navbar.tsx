@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTheme } from '@/context/ThemeContext';
 import { Button } from '@/components/ui/button';
 import { Sun, Moon, Menu, X } from 'lucide-react';
@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [currentTheme, setCurrentTheme] = useState<'light' | 'dark'>(theme);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -14,6 +15,36 @@ const Navbar = () => {
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
+  };
+  
+  // When the component mounts, make sure the UI reflects the current theme
+  useEffect(() => {
+    // Set initial theme class on document
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    
+    // Force update local state to match context
+    setCurrentTheme(theme);
+    console.log('Initial theme set to:', theme);
+  }, []);
+  
+  const handleThemeToggle = () => {
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    setCurrentTheme(newTheme);
+    
+    // Directly update the document class
+    if (newTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    
+    // Also call the context toggle
+    toggleTheme();
+    console.log('Theme toggled to:', newTheme);
   };
 
   const navItems = [
@@ -49,13 +80,10 @@ const Navbar = () => {
             <Button 
               variant="ghost" 
               size="icon" 
-              onClick={() => {
-                console.log('Theme button clicked');
-                toggleTheme();
-              }}
+              onClick={handleThemeToggle}
               className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
             >
-              {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+              {currentTheme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
             </Button>
           </div>
           
@@ -94,12 +122,9 @@ const Navbar = () => {
               ))}
               <button 
                 className="flex items-center text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary px-3 py-2"
-                onClick={() => {
-                  console.log('Mobile theme button clicked');
-                  toggleTheme();
-                }}
+                onClick={handleThemeToggle}
               >
-                {theme === 'dark' ? (
+                {currentTheme === 'dark' ? (
                   <>
                     <Sun className="mr-2" size={20} />
                     <span>Light Mode</span>
